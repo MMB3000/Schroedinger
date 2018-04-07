@@ -1,4 +1,4 @@
---------readme.txt--------
+--------Schroedinger---------
 
 Author: Miguel Bengala
 Description: Solves the Schroedinger equation and returns wave function as an output
