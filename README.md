@@ -6,8 +6,8 @@ Description: Solves the Schroedinger equation and returns wave function as an ou
 
 
 
-## How to compile and this project:  
-On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ./Schroedinger    
+## How to compile and run this project:  
+On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ```./Schroedinger```    
 
 
 
@@ -42,7 +42,8 @@ WaveFunction.nb
 
 
 ## Format of input:  
-The input should be given as "InputSchroedinger.txt" and it should contain these values, each on a different line, in the following order:  
+The input should be given as file named "InputSchroedinger.txt" and it should contain these values, each on a different line, in the following order:  
+```
 < Parameter k >  
 < Parameter a >  
 < Parameter b >  
@@ -50,8 +51,10 @@ The input should be given as "InputSchroedinger.txt" and it should contain these
 < Parameter m >  
 < Size of x coordinate >  
 < Number of points >
+```
 
-Example of input values:  
+### Example of input values:  
+```
 1  
 1  
 1  
@@ -59,7 +62,7 @@ Example of input values:
 1  
 100  
 99    
-
+```
 
 
 ## Format of output of wave function values:  
