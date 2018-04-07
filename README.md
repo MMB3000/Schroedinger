@@ -38,13 +38,13 @@ WaveFunction.nb
 
 Format of input:
 The input should be given as "InputSchroedinger.txt" and it should contain these values in the following order:
-|Parameter k|
-|Parameter a|
-|Parameter b|
-|Planck constant in the desired physical units|
-|Parameter m|
-|Size of x coordinate|
-|Number of points|
+< Parameter k >  
+< Parameter a >  
+< Parameter b >  
+< Planck constant in the desired physical units >  
+< Parameter m >  
+< Size of x coordinate >  
+< Number of points >
 
 Example of input values:
 1
