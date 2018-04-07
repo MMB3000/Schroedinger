@@ -40,7 +40,7 @@ GaussianElimination.cpp
 Eigen.cpp  
 --> Implements algorithm to calculate the first eigenvector and eigenvalue and next ones by the deflation method
 
-InputSchroedinger.txt
+InputSchroedinger.txt  
 --> Example of possible input file with the physical quantities and parameters needed
 
 WaveFunction.nb  
