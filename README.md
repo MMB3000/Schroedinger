@@ -46,7 +46,7 @@ The input should be given as "InputSchroedinger.txt" and it should contain these
 < Size of x coordinate >  
 < Number of points >
 
-Example of input values:
+Example of input values:  
 1  
 1  
 1  
