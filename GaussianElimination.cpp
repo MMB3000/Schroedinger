@@ -69,7 +69,9 @@ Matrix applyGaussianElimin(Matrix & A, Matrix & b) {
 
 //applies Gauss-Jordan method
 Matrix applyGaussJordan(Matrix & A, Matrix & b) {
+
   Matrix M(applyGaussianElimin(A,b));
+
   unsigned A_Nrows= A.size_rows();
   unsigned A_Ncolumns=A.size_columns();
   unsigned M_Ncolumns=A.size_columns()+b.size_columns();
@@ -121,6 +123,7 @@ Matrix solveGauss(Matrix & A, Matrix & b) {
 
   for(unsigned i=0;i<M_Nrows;i++) {
     for(unsigned j=A_Ncolumns;j<M_Ncolumns;j++) {
+      //assign the values of the right part of augmented matrix to the Matrix-solution x
       x.set(i,j-A_Ncolumns,M.get(i,j));
     }
   }
