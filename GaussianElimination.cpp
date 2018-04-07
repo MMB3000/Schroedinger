@@ -12,7 +12,7 @@ namespace determin{
 }
 
 //applies Gaussian elimination to system A|b, with these matrices as arguments
-Matrix MEG(Matrix & A, Matrix & b) {
+Matrix applyGaussianElimin(Matrix & A, Matrix & b) {
   unsigned A_Nrows= A.size_rows();
   unsigned A_Ncolumns=A.size_columns();
   unsigned M_Ncolumns=A.size_columns()+b.size_columns();
@@ -68,8 +68,8 @@ Matrix MEG(Matrix & A, Matrix & b) {
 }
 
 //applies Gauss-Jordan method
-Matrix MEGJ(Matrix & A, Matrix & b) {
-  Matrix M(MEG(A,b));
+Matrix applyGaussJordan(Matrix & A, Matrix & b) {
+  Matrix M(applyGaussianElimin(A,b));
   unsigned A_Nrows= A.size_rows();
   unsigned A_Ncolumns=A.size_columns();
   unsigned M_Ncolumns=A.size_columns()+b.size_columns();
@@ -108,9 +108,9 @@ Matrix MEGJ(Matrix & A, Matrix & b) {
 }
 
 //solves the system Ax=b
-Matrix MEG_solve(Matrix & A, Matrix & b) {
-  Matrix M(MEGJ(A,b)); //Augmented matrix, transformed by Gauss-Jordan Method
-
+Matrix solveGauss(Matrix & A, Matrix & b) {
+  Matrix M(applyGaussJordan(A,b)); //Augmented matrix, transformed by Gauss-Jordan Method
+  
   unsigned A_Ncolumns=A.size_columns();
   unsigned b_Nrows= b.size_rows();
   unsigned b_Ncolumns=b.size_columns();
@@ -130,10 +130,10 @@ Matrix MEG_solve(Matrix & A, Matrix & b) {
 
 
 //inverts matrix
-Matrix Invert(Matrix & A) {
+Matrix invert(Matrix & A) {
   unsigned A_Nrows= A.size_rows();
   Matrix identity(Id(A_Nrows));
-  Matrix M(MEG_solve(A,identity)); // solves system A|Identity --> corresponds to inverse matrix
+  Matrix M(solveGauss(A,identity)); // solves system A|Identity --> corresponds to inverse matrix
   return M;
 }
 
@@ -142,7 +142,7 @@ double det(Matrix & A) {
   double deter=1;
   Matrix nula(0,0);
   
-  Matrix M(MEG(A,nula)); //applies Gaussian elimination to matrix A
+  Matrix M(applyGaussianElimin(A,nula)); //applies Gaussian elimination to matrix A
 
   deter*=determin::coef_det;
   unsigned A_Nrows= A.size_rows();

@@ -48,13 +48,13 @@ class Matrix {
 
   friend Matrix transpose(Matrix & A); //transpose matrix
   
-  friend Matrix MEG(Matrix & A, Matrix & b); //applies Gaussian elimination to system A|b, with these matrices as arguments
+  friend Matrix applyGaussianElimin(Matrix & A, Matrix & b); //applies Gaussian elimination to system A|b, with these matrices as arguments
   
-  friend Matrix MEGJ(Matrix & A, Matrix & b); //applies Gauss-Jordan method
+  friend Matrix applyGaussJordan(Matrix & A, Matrix & b); //applies Gauss-Jordan method
   
-  friend Matrix MEG_solve(Matrix & A, Matrix & b); //solves the system Ax=b
+  friend Matrix solveGauss(Matrix & A, Matrix & b); //solves the system Ax=b
   
-  friend Matrix Invert(Matrix & A); //inverts matrix
+  friend Matrix invert(Matrix & A); //inverts matrix
   
   friend double det(Matrix & A); //computes determinant of matrix
 
@@ -62,7 +62,7 @@ class Matrix {
   
   friend double eigenvalue(Matrix & A,Matrix & V1); //returns eigenvalue calculated with method eigenVec()
   
-  friend Matrix eigenvec_deflate(Matrix & A,Matrix & V1,unsigned n); //computes n next eigenvalues and -vectors using Deflation method
+  friend Matrix deflateEigenvec(Matrix & A,Matrix & V1,unsigned n); //computes n next eigenvalues and -vectors using Deflation method
 
   Matrix getcol(int j); //returns the vector corresponding to a given column of matrix
 

@@ -66,7 +66,7 @@ double eigenvalue(Matrix & A,Matrix & V1) {
 
 
 //computes n next eigenvalues and -vectors using Deflation method
-Matrix eigenvec_deflate(Matrix & A,Matrix & V1,unsigned n) {
+Matrix deflateEigenvec(Matrix & A,Matrix & V1,unsigned n) {
   Matrix a(V1);
   Matrix K(A);
   unsigned a_Nrows= a.size_rows();

@@ -109,7 +109,7 @@ void solveSchroedinger(Matrix & H, double Lbd, double h){
   
   Matrix M(H);
   
-  M=Invert(H); //first step of the algorithm to solve equation
+  M=invert(H); //first step of the algorithm to solve equation
 
   
   int nv=4; //number of desired vectors
@@ -126,7 +126,7 @@ void solveSchroedinger(Matrix & H, double Lbd, double h){
     aproxi.set(i,0,1);
   }
   
-  Matrix eigenTable(eigenvec_deflate(M,aproxi,nv)); //computation of the nv eigenvectors
+  Matrix eigenTable(deflateEigenvec(M,aproxi,nv)); //computation of the nv eigenvectors
   //(organized in a table - each row corresponding to a solution and first element eigenvalue, then eigenvector)
   
   energia=eigenTable.getcol(0); //gets energy values<=>1/eigenvalues
