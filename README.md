@@ -1,7 +1,9 @@
 # Schroedinger
 
 Author: Miguel Bengala  
-Description: Solves the Schroedinger equation and returns wave function as an output    
+Description: Solves the Time Independent Schroedinger Equation of the form  
+![schroedinger_eq]{http://latex.codecogs.com/gif.latex?-%5Cfrac%7B%28h/2%5Cpi%29%5E2%7D%7B2m%7D%5Cfrac%7Bd%5E2%7D%7Bdx%5E2%7D%5CPsi%28x%29&plus;%5Cfrac%7B1%7D%7B2%7DKx%5E2%5CPsi%28x%29%3DE%5CPsi%28x%29}  
+Returns wave function as an output    
 
 
 
