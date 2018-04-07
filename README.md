@@ -6,12 +6,12 @@ Description: Solves the Schroedinger equation and returns wave function as an ou
 
 
 
-How to compile and this project:  
+##How to compile and this project:  
 On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ./Schroedinger    
 
 
 
-Files included in the project:
+##Files included in the project:
 
 Main.cpp    
 --> Receives the input of parameters (physical quantities, etc.) needed to solve the Schroedinger equation, calls the solver for the equation
@@ -41,7 +41,7 @@ WaveFunction.nb
 
 
 
-Format of input:  
+##Format of input:  
 The input should be given as "InputSchroedinger.txt" and it should contain these values, each on a different line, in the following order:  
 < Parameter k >  
 < Parameter a >  
@@ -62,7 +62,7 @@ Example of input values:
 
 
 
-Format of output of wave function values:  
+##Format of output of wave function values:  
 The output consists of three columns: the first corresponds to the index of the solution, the second to the value of x, and the third to the value of Psi of the given x.
 
 
