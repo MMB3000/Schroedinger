@@ -24,10 +24,12 @@ int main()
   std::cout << "*                                                *" << std::endl;
   std::cout << "*  Author: Miguel Bengala                        *" << std::endl;
   std::cout << "*                                                *" << std::endl;
-  std::cout << "*  Description: Solves the Schroedinger equation *" << std::endl;
-  std::cout << "*  and returns wave function as an output.       *" << std::endl;
+  std::cout << "*  Description: Solves the Time Independent      *" << std::endl;
+  std::cout << "*  Schroedinger Equation and returns wave        *" << std::endl;
+  std::cout << "*  function of the different solutions as an     *" << std::endl;
+  std::cout << "*  output and prints corresponding energies      *" << std::endl;      
   std::cout << "*                                                *" << std::endl;
-  std::cout << "*  For more information: readme.txt              *" << std::endl;
+  std::cout << "*  For more information: README.md               *" << std::endl;
   std::cout << "*                                                *" << std::endl;
   std::cout << "**************************************************" << std::endl;
   
