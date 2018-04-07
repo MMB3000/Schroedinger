@@ -23,3 +23,4 @@ Main.o: Main.cpp MatAnyD.h
 clean:
 		rm -f Schroedinger Main.o SchroedingerSolver.o Eigen.o GaussianElimination.o MatAnyD.o
 
+
