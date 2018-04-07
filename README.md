@@ -23,7 +23,7 @@ Main.cpp
 and outputs the execution time
 
 SchroedingerSolver.cpp  
---> Outputs to file the solutions of the Schroedinger Equation for given inputs of physical quantities, and prints the correponding energies
+--> Solves the Schroedinger equation, including the computation of the hamiltonian and the algorithm to solve the equation from eigenvectors; defines a derived class EnergyMatrix from base class Matrix which restricts Matrix to the tridiagonal form; outputs to file the solutions of the Schroedinger Equation for given inputs of physical quantities, and prints the correponding energies
 
 SchroedingerSolver.h  
 --> Header to the methods of SchroedingerSolver
@@ -39,6 +39,9 @@ GaussianElimination.cpp
 
 Eigen.cpp  
 --> Implements algorithm to calculate the first eigenvector and eigenvalue and next ones by the deflation method
+
+InputSchroedinger.txt
+--> Example of possible input file with the physical quantities and parameters needed
 
 WaveFunction.nb  
 --> Plots the graphs for the wave function solutions    
