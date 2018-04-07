@@ -13,7 +13,7 @@ On Linux and using g++, it can be compiled with the Makefile included in the pro
 
 Files included in the project:
 
-Main.cpp  
+Main.cpp    
 --> Receives the input of parameters (physical quantities, etc.) needed to solve the Schroedinger equation, calls the solver for the equation
 and outputs the execution time
 
@@ -41,7 +41,7 @@ WaveFunction.nb
 
 
 
-Format of input:
+Format of input:  
 The input should be given as "InputSchroedinger.txt" and it should contain these values, each on a different line, in the following order:  
 < Parameter k >  
 < Parameter a >  
