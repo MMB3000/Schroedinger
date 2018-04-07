@@ -37,7 +37,7 @@ WaveFunction.nb
 
 
 Format of input:
-The input should be given as "InputSchroedinger.txt" and it should contain these values in the following order:
+The input should be given as "InputSchroedinger.txt" and it should contain these values in the following order:  
 < Parameter k >  
 < Parameter a >  
 < Parameter b >  
@@ -47,13 +47,13 @@ The input should be given as "InputSchroedinger.txt" and it should contain these
 < Number of points >
 
 Example of input values:
-1
-1
-1
-1
-1
-100
-99
+1  
+1  
+1  
+1  
+1  
+100  
+99  
 
 
 
