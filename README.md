@@ -1,14 +1,13 @@
 --------Schroedinger---------
 
-Author: Miguel Bengala
+Author: Miguel Bengala  
 Description: Solves the Schroedinger equation and returns wave function as an output
 
 
 
 
-How to compile this project:
-Linux, using g++, with Makefile included in the project
-
+How to compile and this project:  
+On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ./Schroedinger
 
 
 
@@ -37,7 +36,7 @@ WaveFunction.nb
 
 
 Format of input:
-The input should be given as "InputSchroedinger.txt" and it should contain these values in the following order:  
+The input should be given as "InputSchroedinger.txt" and it should contain these values, each on a different line, in the following order:  
 < Parameter k >  
 < Parameter a >  
 < Parameter b >  
@@ -57,7 +56,7 @@ Example of input values:
 
 
 
-Format of output of wave function values:
+Format of output of wave function values:  
 The output consists of three columns: the first corresponds to the index of the solution, the second to the value of x, and the third to the value of Psi of the given x.
 
 
