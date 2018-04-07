@@ -4,7 +4,7 @@ Author: Miguel Bengala
 Description: Solves the Time Independent Schroedinger Equation of the form  
 ![schroedinger_eq](http://latex.codecogs.com/gif.latex?-%5Cfrac%7B%28h/2%5Cpi%29%5E2%7D%7B2m%7D%5Cfrac%7Bd%5E2%7D%7Bdx%5E2%7D%5CPsi%28x%29&plus;%5Cfrac%7B1%7D%7B2%7DKx%5E2%5CPsi%28x%29%3DE%5CPsi%28x%29)  
 with  
-![kinetic_eq](http://latex.codecogs.com/gif.latex?K%3D-%5Cfrac%7B%5Chbar%5E2%7D%7B2m%7D%5Cfrac%7Bd%5E2%7D%7Bdx%5E2%7D)   and   ![potential_eq](http://latex.codecogs.com/gif.latex?V%28x%29%3D%5Cfrac%7Bk%7D%7B2%7D%5Cleft%20%28%20%5Cfrac%7Ba%5E4%7D%7Bb%5E2%7D-%5Cfrac%7Ba%5E4%7D%7Bx%5E2&plus;b%5E2%7D%20%5Cright%20%29)  
+![kinetic_eq](http://latex.codecogs.com/gif.latex?K%3D-%5Cfrac%7B%5Chbar%5E2%7D%7B2m%7D%5Cfrac%7Bd%5E2%7D%7Bdx%5E2%7D)   ,   ![potential_eq](http://latex.codecogs.com/gif.latex?V%28x%29%3D%5Cfrac%7Bk%7D%7B2%7D%5Cleft%20%28%20%5Cfrac%7Ba%5E4%7D%7Bb%5E2%7D-%5Cfrac%7Ba%5E4%7D%7Bx%5E2&plus;b%5E2%7D%20%5Cright%20%29)  
 Returns wave function of the different solutions as an output to a file and corresponding energies to the screen.    
 
 
