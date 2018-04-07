@@ -1,36 +1,42 @@
 --------Schroedinger---------
 
 Author: Miguel Bengala  
-Description: Solves the Schroedinger equation and returns wave function as an output
+Description: Solves the Schroedinger equation and returns wave function as an output    
 
 
 
 
 How to compile and this project:  
-On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ./Schroedinger
+On Linux and using g++, it can be compiled with the Makefile included in the project and then run on the terminal  ./Schroedinger    
 
 
 
 Files included in the project:
 
-MatAnyD.cpp     MatAnyD.h
---> Define a Matrix class and the corresponding operations
-
-GaussianElimination.cpp
---> Implement Gaussian elimination a its subproducts (determinant, inverse matrix, solution of linear system)
-
-Eigen.cpp
---> Implements algorithm to calculate the first eigenvector and eigenvalue and next ones by the deflation method
-
-SchroedingerSolver.cpp     SchroedingerSolver.h
---> Outputs to file the solutions of the Schroedinger Equation for given inputs of physical quantities, and prints the correponding energies
-
-Main.cpp
+Main.cpp  
 --> Receives the input of parameters (physical quantities, etc.) needed to solve the Schroedinger equation, calls the solver for the equation
 and outputs the execution time
 
-WaveFunction.nb
---> Plots the graphs for the wave function solutions
+SchroedingerSolver.cpp  
+--> Outputs to file the solutions of the Schroedinger Equation for given inputs of physical quantities, and prints the correponding energies
+
+SchroedingerSolver.h  
+--> Header to the methods of SchroedingerSolver
+
+MatAnyD.cpp  
+--> Define a Matrix class and the corresponding operations
+
+MatAnyD.h  
+--> Header including the Matrix class, its friend methods (including gaussian elimination and methods for eigenvectors) and other related functions.
+
+GaussianElimination.cpp  
+--> Implement Gaussian elimination a its subproducts (determinant, inverse matrix, solution of linear system)
+
+Eigen.cpp  
+--> Implements algorithm to calculate the first eigenvector and eigenvalue and next ones by the deflation method
+
+WaveFunction.nb  
+--> Plots the graphs for the wave function solutions    
 
 
 
@@ -52,7 +58,7 @@ Example of input values:
 1  
 1  
 100  
-99  
+99    
 
 
 
